@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "amathew4538.o3ni.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

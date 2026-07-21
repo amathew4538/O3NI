@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "o3ni",
+	"version": "${version}",
+	"name": "Ozone Not Included",
+	"description": "Ozone Not Included (O3NI) is a mod about researching your way to space, similar to Oxygen Not Included.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://github.com/amathew4538/o3ni",
+		"sources": "https://github.com/amathew4538/o3ni/",
+		"issues": "https://github.com/amathew4538/o3ni/issues"
+	},
+	"license": "AGPL-V3.0",
+	"icon": "assets/o3ni/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"amathew4538.o3ni.O3NI"
+		],
+		"client": [
+			"amathew4538.o3ni.client.O3NIClient"
+		],
+		"fabric-datagen": [
+			"amathew4538.o3ni.client.O3NIDataGenerator"
+		]
+	},
+	"mixins": [
+		"o3ni.mixins.json",
+		{
+			"config": "o3ni.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"geckolib": ">=4.5"
+	}
+}
