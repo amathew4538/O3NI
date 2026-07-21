@@ -9,6 +9,8 @@ on: [pull_request, push]
 jobs:
   build:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
     steps:
       - name: checkout repository
         uses: actions/checkout@v6
@@ -28,3 +30,19 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+      - name: Get commit title
+        if: github.event_name == 'push'
+        id: commit_info
+        run: |
+          COMMIT_TITLE=$(echo "${{ github.event.head_commit.message }}" | head -n 1)
+          echo "title=$COMMIT_TITLE" >> $GITHUB_OUTPUT
+      - name: Create GitHub Release
+        if: github.event_name == 'push'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "v0.0.${{ github.run_number }}"
+          name: "${{ steps.commit_info.outputs.title }}"
+          body: "${{ github.event.head_commit.message }}"
+          files: build/libs/*.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
