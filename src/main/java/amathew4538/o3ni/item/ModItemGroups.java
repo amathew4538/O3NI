@@ -18,6 +18,7 @@ public class ModItemGroups {
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ABYSSALITE);
             output.accept(ModItems.CERAMIC);
+            output.accept(ModItems.NEUTRONIUM);
             output.accept(ModBlocks.NEUTRONIUM_BLOCK);
         })
         .build();

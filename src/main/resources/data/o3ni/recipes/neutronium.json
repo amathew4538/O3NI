@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "o3ni:neutronium_block"
+        }
+    ],
+    "result": {
+        "item": "o3ni:neutronium",
+        "count": 9
+    }
+}

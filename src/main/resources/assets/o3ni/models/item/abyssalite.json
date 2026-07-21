@@ -1,4 +1,6 @@
-{"texture_size": [32, 32],
+{
+	"gui_light": "front",
+	"texture_size": [32, 32],
 	"textures": {
 		"0": "o3ni:item/abyssalite",
 		"particle": "o3ni:item/abyssalite"

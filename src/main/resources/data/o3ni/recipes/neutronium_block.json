@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "o3ni:neutronium"
+        }
+    },
+    "result": {
+        "item": "o3ni:neutronium_block"
+    }
+}
