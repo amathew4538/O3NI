@@ -1,6 +1,7 @@
 package amathew4538.o3ni.item;
 
 import amathew4538.o3ni.O3NI;
+import amathew4538.o3ni.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,8 +17,8 @@ public class ModItemGroups {
         .icon(() -> new ItemStack(ModItems.ABYSSALITE))
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ABYSSALITE);
-            output.accept(ModItems.COBALT_ORE);
             output.accept(ModItems.CERAMIC);
+            output.accept(ModBlocks.NEUTRONIUM_BLOCK);
         })
         .build();
 

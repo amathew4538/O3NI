@@ -11,7 +11,6 @@ import net.minecraft.resources.ResourceLocation;
 public class ModItems {
     public static final Item ABYSSALITE = RegisterItem("abyssalite", new Item(new FabricItemSettings()));
     public static final Item CERAMIC = RegisterItem("ceramic", new Item(new FabricItemSettings()));
-    public static final Item COBALT_ORE = RegisterItem("cobalt_ore", new Item(new FabricItemSettings()));
 
     @SuppressWarnings("null")
     private static Item RegisterItem(String name, Item item) {
