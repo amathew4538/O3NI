@@ -2,6 +2,8 @@
     "itemGroup.o3ni.mod_tab": "Ozone Not Included",
     "item.o3ni.abyssalite": "Abyssalite",
     "item.o3ni.ceramic": "Ceramic",
+    "item.o3ni.raw_cobalt": "Raw Cobalt",
+    "block.o3ni.cobalt_ore": "Cobalt Ore",
     "item.o3ni.neutronium": "Neutronium",
     "block.o3ni.neutronium_block": "Neutronium Block"
 }

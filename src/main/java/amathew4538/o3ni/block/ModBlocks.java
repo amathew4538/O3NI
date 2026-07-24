@@ -9,14 +9,20 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.util.valueproviders.UniformInt;
 
 public class ModBlocks {
+    @SuppressWarnings("null")
+    public static final Block COBALT_ORE = RegisterBlock("cobalt_ore",
+        new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(3, 7))
+    );
     @SuppressWarnings("null")
     public static final Block NEUTRONIUM_BLOCK = RegisterBlock("neutronium_block",
         new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK))
     );
-    
+
     @SuppressWarnings("null")
     private static Block RegisterBlock(String name, Block block) {
         RegisterBlockItem(name, block);

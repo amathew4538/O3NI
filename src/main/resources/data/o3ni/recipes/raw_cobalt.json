@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "o3ni:cobalt_ore"
+        }
+    ],
+    "result": {
+        "item": "o3ni:raw_cobalt",
+        "count": 9
+    }
+}

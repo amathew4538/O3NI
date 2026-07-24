@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "o3ni:raw_cobalt"
+        }
+    },
+    "result": {
+        "item": "o3ni:cobalt_ore"
+    }
+}
